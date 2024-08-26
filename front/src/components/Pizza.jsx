@@ -36,7 +36,8 @@ const Pizza = () => {
       <Card.Body>
         <Card.Title>Pizza : {pizza.name}</Card.Title>
         <Card.Text>
-          <p>Ingredientes :</p>  <ul>
+          <p style={{fontSize:'12px'}}>{pizza.desc}</p><br></br>
+          <p style={{ fontWeight: 'bold' }}>Ingredientes :</p>  <ul>
             {pizza.ingredients.map((ingredient,i) => (//mapeamos para los ingredientes
               <li key={i}>{ingredient}</li>
             ))}
