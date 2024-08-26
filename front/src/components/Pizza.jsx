@@ -8,7 +8,7 @@ const Pizza = () => {
   // Función que consume la api para una tarjeta 
   const consultarApi = async () => {
     try {// configuramos con try catch para avisar errores
-      const url = "http://localhost:5000/api/pizzas/p006";
+      const url = "http://localhost:5000/api/pizzas/p001";
       const response = await fetch(url);
       const data = await response.json();
       setPizza(data); // Aqui se guardan  los datos de la API en el estado
